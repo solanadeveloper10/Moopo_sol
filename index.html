@@ -1,0 +1,746 @@
+<html lang="en">
+  <head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <style>
+      #dexscreener-embed {
+        position: relative;
+        width: 100%;
+        padding-bottom: 125%;
+      }
+      @media (min-width: 1400px) {
+        #dexscreener-embed {
+          padding-bottom: 65%;
+        }
+      }
+      #dexscreener-embed iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        border: 0;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimum-scale=1"
+    />
+    <title>$pipo</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animation.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+
+    <link rel="stylesheet" href="css/screen_style.css" />
+    <link rel="stylesheet" href="css/tablet_style.css" />
+    <link rel="stylesheet" href="css/mobile_style.css" />
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/svg" />
+    <script type="module" crossorigin src="assets/index-IyFAbxco.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <picture> </picture>
+      <header class="header layer-5">
+        <div class="header__container container">
+          <div class="header__logo logo">
+            <img class="logo__icon" src="img/hero-title.png" alt="$pipo" />
+          </div>
+          <nav class="header__nav">
+            <a href="index.html#home">Home</a> <a href="index.html#about">About</a>
+            <a href="index.html#how-to-buy">How to&nbsp;buy</a>
+          </nav>
+          <a
+            class="header__btn btn"
+            target="_blank"
+            style="color: #fff"
+            href="https://jup.ag/swap/SOL-RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo"
+            ><img src="img/jup.png" alt="" /> Buy me</a
+          >
+        </div>
+      </header>
+      <section id="home" class="hero">
+        <div class="home__inner" style="">
+          <img style="max-height: 35vw" src="img/pipo.png" alt="" />
+
+          <div
+            style="
+              max-width: 600px;
+              align-self: center;
+              display: block;
+              color: #effaff;
+              text-shadow:
+                #000 3px 0 0,
+                #000 2.83487px 0.981584px 0,
+                #000 2.35766px 1.85511px 0,
+                #000 1.62091px 2.52441px 0,
+                #000 0.705713px 2.91581px 0,
+                #000 -0.287171px 2.98622px 0,
+                #000 -1.24844px 2.72789px 0,
+                #000 -2.07227px 2.16926px 0,
+                #000 -2.66798px 1.37182px 0,
+                #000 -2.96998px 0.42336px 0,
+                #000 -2.94502px -0.571704px 0,
+                #000 -2.59586px -1.50383px 0,
+                #000 -1.96093px -2.27041px 0,
+                #000 -1.11013px -2.78704px 0,
+                #000 -0.137119px -2.99686px 0,
+                #000 0.850987px -2.87677px 0,
+                #000 1.74541px -2.43999px 0,
+                #000 2.44769px -1.73459px 0,
+                #000 2.88051px -0.838247px 0;
+            "
+            class="story__col"
+          >
+            <h2 class="story__title">Hi, I'm pipo.</h2>
+            <p class="" style="font-size: 24px; line-height: 1.2">
+              Don't let my brainless face fool you.
+              <br />
+              I'm here to establish hippopotamus hegemony over the entire crypto
+              world.
+              <br />
+            </p>
+          </div>
+        </div>
+        <div class="hero__container container layer-1">
+          <div class="hero__col layer-2">
+            <div class="hero__socials">
+              <a
+                class="hero__social"
+                href="https://t.me/PipoSolana"
+                target="_blank"
+                ><img src="img/social/telegram.png" alt="" /> </a
+              ><a
+                class="hero__social"
+                href="https://x.com/PipoTheHippo"
+                target="_blank"
+                ><img src="img/social/twitter.png" alt="" />
+              </a>
+            </div>
+            <div class="tokenomics__contract contract">
+              <div>
+                <span class="contract__label">Contract address</span>
+                <span
+                  id="contractAddress"
+                  class="contract__value"
+                  style="font-size: 14px"
+                >
+                  RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo
+                </span>
+              </div>
+              <button
+                id="copyButton"
+                class="contract__btn"
+                aria-label="Copy Contract Address"
+              >
+                <!-- Copy Icon -->
+                <svg
+                  id="copyIcon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: inline"
+                >
+                  <g>
+                    <path
+                      d="M17.6266 3.22667L15.7232 1.26083C15.4895 1.0208 15.2101 0.829867 14.9016 0.699218C14.5931 0.568569 14.2616 0.500839 13.9266 0.5H9.9974C9.03723 0.501212 8.10683 0.833408 7.36302 1.4406C6.61921 2.04779 6.10748 2.89284 5.91406 3.83333H5.83073C4.72607 3.83466 3.66703 4.27407 2.88591 5.05518C2.1048 5.8363 1.66539 6.89534 1.66406 8V16.3333C1.66539 17.438 2.1048 18.497 2.88591 19.2782C3.66703 20.0593 4.72607 20.4987 5.83073 20.5H10.8307C11.9354 20.4987 12.9944 20.0593 13.7755 19.2782C14.5567 18.497 14.9961 17.438 14.9974 16.3333V16.25C15.9379 16.0566 16.7829 15.5448 17.3901 14.801C17.9973 14.0572 18.3295 13.1268 18.3307 12.1667V4.96667C18.332 4.31701 18.0793 3.6926 17.6266 3.22667ZM10.8307 18.8333H5.83073C5.16769 18.8333 4.5318 18.5699 4.06296 18.1011C3.59412 17.6323 3.33073 16.9964 3.33073 16.3333V8C3.33073 7.33696 3.59412 6.70107 4.06296 6.23223C4.5318 5.76339 5.16769 5.5 5.83073 5.5V12.1667C5.83205 13.2713 6.27146 14.3304 7.05258 15.1115C7.83369 15.8926 8.89273 16.332 9.9974 16.3333H13.3307C13.3307 16.9964 13.0673 17.6323 12.5985 18.1011C12.1297 18.5699 11.4938 18.8333 10.8307 18.8333ZM14.1641 14.6667H9.9974C9.33435 14.6667 8.69847 14.4033 8.22963 13.9344C7.76079 13.4656 7.4974 12.8297 7.4974 12.1667V4.66667C7.4974 4.00363 7.76079 3.36774 8.22963 2.8989C8.69847 2.43006 9.33435 2.16667 9.9974 2.16667H13.3307V3.83333C13.3307 4.27536 13.5063 4.69928 13.8189 5.01184C14.1314 5.32441 14.5554 5.5 14.9974 5.5H16.6641V12.1667C16.6641 12.8297 16.4007 13.4656 15.9318 13.9344C15.463 14.4033 14.8271 14.6667 14.1641 14.6667Z"
+                      fill="currentColor"
+                      style="color: #b7fb9d"
+                    ></path>
+                  </g>
+                </svg>
+
+                <!-- Tick Icon (Hidden by Default) -->
+                <svg
+                  id="tickIcon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="display: none; color: rgb(3, 255, 0)"
+                >
+                  <path
+                    d="M20.285 6.709L9 18l-5.285-5.291"
+                    stroke="currentColor"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+
+                <span
+                  id="copyButtonText"
+                  style="color: #b7fb9d; margin-left: 5px"
+                  >Copy</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="water">
+        <div class="water__under layer-0"></div>
+        <div id="about" class="story layer-2" style="padding-top: 55px">
+          <div class="story__container container">
+            <div class="story__inner">
+              <div class="story__illustration"></div>
+              <div class="story__col">
+                <h2 class="story__title">The pipo’s Meta</h2>
+                <p class="story__text">
+                  Sick of watching puppies and kittens monopolize the attention?
+                  <br />
+                  <br />
+                  There's a new heavyweight in the meme arena.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="find layer-3">
+          <div class="find__container container">
+            <h2 class="find__title">Find us&nbsp;on</h2>
+            <div class="find__grid">
+              <a class="find__item" href="index.html#" target="_blank"
+                ><img src="img/partners/coinmarketcap.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://www.coingecko.com/en/coins/pipo"
+                target="_blank"
+                ><img src="img/partners/coingecko.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://dexscreener.com/solana/RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo"
+                target="_blank"
+                ><img src="img/partners/dexscreener.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://www.dextools.io/app/es/token/pipo"
+                target="_blank"
+                ><img src="img/partners/dextools.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://solscan.io/token/RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo"
+                target="_blank"
+                ><img src="img/partners/solscan.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://x.com/PipoTheHippo"
+                target="_blank"
+                ><img src="img/partners/twitter.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://t.me/PipoSolana"
+                target="_blank"
+                ><img src="img/partners/telegram.png" alt="" /> </a
+              ><a
+                class="find__item"
+                href="https://www.instagram.com/pipo_meme/"
+                target="_blank"
+                ><img src="img/partners/instagram.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="layer-3"
+        style="
+          /* background: linear-gradient(180deg, #edbac4 0%, #bebebe 100%); */
+          display: flex;
+          flex-direction: column;
+        "
+      >
+        <section id="how-to-buy" class="buy layer-2">
+          <div class="buy__container container layer-2">
+            <h2 class="buy__title">Get $pipo on&nbsp;DEX</h2>
+            <div class="buy__grid">
+              <div class="buy__item">
+                <img
+                  class="buy__icon"
+                  src="img/buy1.png"
+                  alt=""
+                  style="height: 100px; width: auto"
+                />
+                <h5 class="buy__subtitle">Download PHANTOM Extension</h5>
+                <p class="buy__text">
+                  Download and install phantom on&nbsp;the appstore, or,
+                  alternatively if&nbsp;you’re on&nbsp;desktop download and
+                  install the browser extension.
+                </p>
+                <div class="buy__arrow">
+                  <svg
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    style="color: aquamarine"
+                  >
+                    <path
+                      d="M2 2.03784L13.5858 13.6236C14.3668 14.4047 14.3668 15.671 13.5858 16.4521L2 28.0378M17 2.03784L28.5858 13.6236C29.3668 14.4047 29.3668 15.671 28.5858 16.4521L17 28.0378"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="buy__item">
+                <img
+                  class="buy__icon"
+                  src="img/buy2.png"
+                  alt=""
+                  style="height: 100px; width: auto"
+                />
+                <h5 class="buy__subtitle">Secure you SOL</h5>
+                <p class="buy__text">
+                  Now go&nbsp;to&nbsp;Raydium and paste the $pipo Contract
+                  Address to&nbsp;swap your SOL.
+                </p>
+                <div class="buy__arrow">
+                  <svg
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2.03784L13.5858 13.6236C14.3668 14.4047 14.3668 15.671 13.5858 16.4521L2 28.0378M17 2.03784L28.5858 13.6236C29.3668 14.4047 29.3668 15.671 28.5858 16.4521L17 28.0378"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="buy__item">
+                <img
+                  class="buy__icon"
+                  src="img/buy3.png"
+                  alt=""
+                  style="height: 100px; width: auto"
+                />
+                <h5 class="buy__subtitle">Buy some $pipo</h5>
+                <p class="buy__text">
+                  Now go&nbsp;to
+                  <a href="https://raydium.io/" target="_blank">Raydium</a> and
+                  paste the $pipo Contract Address to&nbsp;swap your SOL.
+                </p>
+                <div class="buy__arrow">
+                  <svg
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2.03784L13.5858 13.6236C14.3668 14.4047 14.3668 15.671 13.5858 16.4521L2 28.0378M17 2.03784L28.5858 13.6236C29.3668 14.4047 29.3668 15.671 28.5858 16.4521L17 28.0378"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      style="color: aquamarine"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="buy__item">
+                <img
+                  class="buy__icon"
+                  src="img/buy4.png"
+                  alt=""
+                  style="height: 100px; width: auto"
+                />
+                <h5 class="buy__subtitle">Add to&nbsp;Your Wallet</h5>
+                <p class="buy__text">
+                  Now you’re all&nbsp;set! Welcome aboard the next rocket
+                  to&nbsp;the moon, just import the contract address
+                  to&nbsp;view you’re holdings and you can track your earnings.
+                </p>
+                <div class="buy__arrow">
+                  <svg
+                    width="32"
+                    height="30"
+                    viewBox="0 0 32 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 2.03784L13.5858 13.6236C14.3668 14.4047 14.3668 15.671 13.5858 16.4521L2 28.0378M17 2.03784L28.5858 13.6236C29.3668 14.4047 29.3668 15.671 28.5858 16.4521L17 28.0378"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="second__story__container container" style="">
+          <div class="second__story__inner">
+            <div class="story__col">
+              <h2 class="story__title" style="font-size: 60px">
+                The pipo’s rise to Valhalla
+              </h2>
+              <p class="story__text" style="font-size: 24px">
+                Pipo rises, holding his green lightsaber, ready to bring balance
+                to the market.
+
+                <br />
+                <br />
+                The hippo era is about domination, resilience, and always
+                trusting in the bullish side.
+              </p>
+            </div>
+            <div class="second__story__illustration"></div>
+          </div>
+          <div id="dexscreener-embed">
+            <iframe
+              style="/* border-radius: 64px; */"
+              src="https://dexscreener.com/solana/RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo?embed=1&amp;theme=dark&amp;trades=0&amp;info=0"
+            ></iframe>
+          </div>
+        </div>
+        <section class="memes-section">
+          <h2 class="memes-title hidden hidden-bottom show-bottom">MEMES</h2>
+          <div class="memes">
+            <div class="scroll-line left-to-right">
+              <div class="scrolling-content">
+                <div class="meme">
+                  <img src="img/memes/1.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/2.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/3.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/4.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/5.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/6.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/7.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/8.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/9.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/10.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="scroll-line right-to-left">
+              <div class="scrolling-content">
+                <div class="meme">
+                  <img src="img/memes/11.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/12.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/13.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/14.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/15.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/16.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/17.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/18.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/19.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/20.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="scroll-line left-to-right">
+              <div class="scrolling-content">
+                <div class="meme">
+                  <img src="img/memes/21.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/22.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/23.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/24.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/25.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/26.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/27.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/28.jpg" alt="" />
+                </div>
+
+                <div class="meme">
+                  <img src="img/memes/29.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/30.jpg" alt="" />
+                </div>
+                <div class="meme">
+                  <img src="img/memes/31.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="memes-effect left-effect"></div>
+            <div class="memes-effect right-effect"></div>
+            <div class="memes-bottom">
+              <a class='memes-button bouncing' href='meme.html' id='openModalBtn'>
+                Create your own
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="community" class="community layer-2">
+          <div class="community__container container">
+            <img style="max-height: 350px" src="img/hug.png" alt="" />
+            <div class="community__col">
+              <h2 class="community__title">pipo COMMUNITY</h2>
+              <p class="community__text">
+                In the end, what really matters is the strength of the
+                community. That’s why we focus on building a united, proactive
+                group that grows together. By fostering long-term bonds, we
+                elevate the project to a top-tier memecoin. Join our community
+                on Telegram or Twitter, and let’s thrive as one.
+              </p>
+              <div class="community__btns">
+                <a
+                  class="community__btn"
+                  href="https://t.me/PipoSolana"
+                  target="_blank"
+                  ><img src="img/telegram.png" alt="" /> </a
+                ><a
+                  class="community__btn"
+                  href="https://x.com/PipoTheHippo"
+                  target="_blank"
+                  ><img src="img/twitter.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <picture
+          ><source
+            class="footer-illustration"
+            srcset="/img/footer-illustration.webp"
+            type="image/webp"
+          />
+        </picture>
+        <footer class="footer">
+          <div class="footer__container container">
+            <div class="footer__top">
+              <div class="footer__socials">
+                <div>
+                  <a
+                    class="footer__social"
+                    href="https://dexscreener.com/solana/RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo"
+                    target="_blank"
+                    ><img src="img/social/dexscreener.png" alt="" /> </a
+                  ><a
+                    class="footer__social"
+                    href="https://www.dextools.io/app/es/token/pipo"
+                    target="_blank"
+                    ><img src="img/social/dextools.png" alt="" />
+                  </a>
+                </div>
+
+                <div></div>
+              </div>
+              <a
+                class="footer__btn"
+                href="https://jup.ag/swap/SOL-RodhH2Xivnpt9AjK1ZniRap6TTcK1yx9CJmZ5zqPipo"
+                target="_blank"
+                ><img src="img/jup.png" alt="" /> Buy me</a
+              >
+            </div>
+            <div class="footer__bottom">
+              <div class="footer__left">
+                <div class="footer__logo logo">
+                  <img
+                    class="logo__icon footer-logo"
+                    src="img/hero-title.png"
+                    alt="$pipo"
+                  />
+                </div>
+              </div>
+              <div class="footer__copyright">
+                <div><a href="mailto:hippo@pipo.meme">hippo@pipo.meme</a></div>
+              </div>
+              <div class="footer__right">
+                <nav class="footer__nav">
+                  <a href="index.html#home">Home</a> <a href="index.html#about">About</a>
+
+                  <a href="index.html#how-to-buy">How to&nbsp;buy</a>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script>
+      // Wait until the DOM is fully loaded
+      document.addEventListener("DOMContentLoaded", function () {
+        const copyButton = document.getElementById("copyButton");
+        const contractAddress = document.getElementById("contractAddress");
+        const copyButtonText = document.getElementById("copyButtonText");
+        const copyIcon = document.getElementById("copyIcon");
+        const tickIcon = document.getElementById("tickIcon");
+
+        // Fallback copy function
+        function fallbackCopyTextToClipboard(text) {
+          const textArea = document.createElement("textarea");
+          textArea.value = text;
+
+          // Avoid scrolling to bottom
+          textArea.style.top = "0";
+          textArea.style.left = "0";
+          textArea.style.position = "fixed";
+
+          document.body.appendChild(textArea);
+          textArea.focus();
+          textArea.select();
+
+          let successful = false;
+          try {
+            successful = document.execCommand("copy");
+          } catch (err) {
+            console.error("Fallback: Oops, unable to copy", err);
+          }
+
+          document.body.removeChild(textArea);
+          return successful;
+        }
+
+        // Function to handle UI feedback
+        function showCopiedFeedback() {
+          // Hide copy icon and text
+          copyIcon.style.display = "none";
+          copyButtonText.textContent = "Copied!";
+
+          // Show tick icon
+          tickIcon.style.display = "inline";
+
+          // Optionally, change button color or style
+          // copyButton.style.color = '#00ff03';
+
+          // Revert back after 2 seconds
+          setTimeout(function () {
+            // Show copy icon and reset text
+            copyIcon.style.display = "inline";
+            copyButtonText.textContent = "Copy";
+
+            // Hide tick icon
+            tickIcon.style.display = "none";
+
+            // Reset button color or style if changed
+            // copyButton.style.color = '#b7fb9d';
+          }, 2000);
+        }
+
+        // Event listener for copy action
+        copyButton.addEventListener("click", function () {
+          const address = contractAddress.textContent.trim();
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(address).then(
+              function () {
+                // Show copied feedback
+                showCopiedFeedback();
+              },
+              function (err) {
+                console.error("Could not copy text: ", err);
+                // Optionally, handle copy failure (e.g., show error message)
+              }
+            );
+          } else {
+            const successful = fallbackCopyTextToClipboard(address);
+            if (successful) {
+              // Show copied feedback
+              showCopiedFeedback();
+            } else {
+              console.error("Fallback: Unable to copy");
+              // Optionally, handle copy failure (e.g., show error message)
+            }
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

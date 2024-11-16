@@ -1,0 +1,275 @@
+<html lang="en">
+  <head>
+    <script type="module" src="https://pipo.meme/@vite/client"></script>
+
+    <script type="module" src="https://pipo.meme/@vite/client"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/meme.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- End Google Tag Manager -->
+    <title>$pipo | memes</title>
+  </head>
+
+  <body>
+    <div id="content">
+      <nav>
+        <a class='back-button header-el hidden net2' href='index.html'><i class="bi bi-arrow-left-short"></i> GO BACK HOME</a
+        >
+        <div class="hidden">
+          <img
+            class="logo"
+            src="img/hero-title.png"
+            style="
+              display: block;
+              margin-inline: auto;
+              margin-top: 50px;
+              margin-bottom: 10px;
+            "
+          />
+          <div class="slogan">MEME GENERATOR</div>
+        </div>
+        <div class="header-el"></div>
+      </nav>
+
+      <div class="modal-container hidden">
+        <div class="modal-image-container">
+          <div class="modal-tuto-text">
+            <img class="arrow" src="img/arrow.png" alt="" />
+            <span class="stobe-animation"
+              >Click on any place in the image to write</span
+            >
+          </div>
+          <div
+            id="mainImage"
+            class="modal-image"
+            style="background-image: url(https://pipo.meme/&quot;./img/memes/1.jpg&quot;)"
+          ></div>
+          <div class="modal-tuto-text modal-tuto-text-right">
+            <span class="stobe-animation">CHOOSE AN IMAGE YOU want to use</span>
+            <img class="arrow" src="img/arrow_down.png" alt="" width="100px" />
+          </div>
+        </div>
+        <div class="editor-section">
+          <div class="text-editor-font-rotate">
+            <div class="font-editor">
+              <label class="editor-label">FONT: </label>
+              <select name="font" id="font-editor-select">
+                <option value="Soda Shake">Soda Shake</option>
+                <option value="Menco_Black">Menco Black</option>
+                <option value="cutsey">Cutsey</option>
+                <option value="cuteDino">Cute Dino</option>
+                <option value="comic">Comic sans ms</option>
+                <option value="newImpact">Impact</option>
+              </select>
+            </div>
+            <div class="text-rotation">
+              <label class="editor-label">ROTATE: </label>
+              <div class="editor-label-input-container">
+                <input
+                  type="number"
+                  max="360"
+                  min="-360"
+                  class="text-rotation-input"
+                  value="0"
+                />
+                <label>%</label>
+              </div>
+            </div>
+          </div>
+          <div class="text-editor">
+            <label class="editor-label">SIZE: </label>
+            <div class="size-editor">
+              <div class="decrease-size">-</div>
+              <div class="text-size">
+                <span class="current-text-size" contenteditable="true">25</span
+                ><span style="color: white"> PX</span>
+              </div>
+              <div class="increase-size">+</div>
+            </div>
+          </div>
+          <div class="text-editor-weight-color">
+            <div class="color-editor">
+              <div class="color-editor-black"></div>
+              <div class="color-editor-white"></div>
+            </div>
+            <div class="weight-editor">
+              <strong>Bold</strong>
+              <i>Italic</i>
+            </div>
+          </div>
+        </div>
+        <div class="modal-button-container">
+          <div id="downloadBtn" class="download-button stobe-animation">
+            <i class="bi bi-cloud-arrow-down" style="margin-right: 10px"></i>
+            DOWNLOAD
+          </div>
+        </div>
+        <div class="modal-scrollmenu thumbnail-container">
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/1.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/4.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/6.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/7.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/8.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/9.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/10.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/11.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/12.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/14.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/15.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/16.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/18.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/19.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/20.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/21.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/22.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/23.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/24.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/25.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/26.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/27.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/28.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/29.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/30.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/31.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/34.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/35.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/36.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/37.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/38.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/39.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/40.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/41.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/42.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/43.jpg&quot;)"
+          ></div>
+          <div
+            class="modal-pictures"
+            style="background-image: url(https://pipo.meme/&quot;/img/memes/44.jpg&quot;)"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/meme.js"></script>
+  </body>
+</html>
